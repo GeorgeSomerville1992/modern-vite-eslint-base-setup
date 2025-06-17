@@ -10,3 +10,4 @@ Todo
 - Reinstall so no strange typescript casting
 - Add tailwind
 - Deploy to github
+  https://vercel.com/georgesomervilleklektcoms-projects/modern-vite-eslint-base-setup
