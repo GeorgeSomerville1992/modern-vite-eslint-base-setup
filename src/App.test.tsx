@@ -5,14 +5,11 @@ import { MemoryRouter } from 'react-router';
 
 describe('App', () => {
   it('Renders hello world', () => {
-    // ARRANGE
     render(
       <MemoryRouter initialEntries={['/']}>
         <App />
       </MemoryRouter>,
     );
-    // ACT
-    // EXPECT
     expect(
       screen.getByRole('heading', {
         level: 1,
@@ -30,6 +27,9 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 1,
       }),
-    ).toHaveTextContent('Not Found');
+    ).toHaveTextContent('404');
+
+    expect(screen.getByText('Take me back to')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Home' })).toBeInTheDocument();
   });
 });
