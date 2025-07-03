@@ -2,8 +2,11 @@
 
 - Latest vite config with eslint
 - Vite tests
+  - Fire event
+  - useFakeTimers
 - Router v7 added and route mocking
 - Tailwind
+- Sonar for code coverage
 
 ### Deployment
 
